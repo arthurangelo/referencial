@@ -18,3 +18,8 @@ Injetar propriedade de teste spring
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @ExtendWith(SpringExtension.class)
 @EnableAutoConfiguration
+
+ou
+
+@ExtendWith(SpringExtension.class)
+@TestPropertySource(locations="classpath:application.properties")
